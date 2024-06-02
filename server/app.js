@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express();
 app.get('/', (req, res) => {
-  res.send('CICD Project API is running.....');
+  res.send('CICD Project API is running.....From Ci');
 });
 
 app.listen(
