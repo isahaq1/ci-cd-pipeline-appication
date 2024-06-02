@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
 app.listen(
   3000,
   console.log(
-    `CICD Project server running  on port 3000`
+    `CICD Project server running  on port 3000 test`
   )
 );
