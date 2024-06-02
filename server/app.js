@@ -1,12 +1,12 @@
 import express from 'express';
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Project One API is running.....');
+  res.send('CICD Project API is running.....');
 });
 
 app.listen(
   3000,
   console.log(
-    `Project One server running  on port 3000`
+    `CICD Project server running  on port 3000`
   )
 );
