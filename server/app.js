@@ -5,8 +5,8 @@ app.get('/', (req, res) => {
 });
 
 app.listen(
-  4000,
+  400000,
   console.log(
-    `CICD Project server running  on port 7000 test`
+    `CICD Project server running  on port 400000 test`
   )
 );
