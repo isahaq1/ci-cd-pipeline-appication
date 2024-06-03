@@ -10,3 +10,4 @@ app.listen(
     `CICD Project server running  on port 2000 test`
   )
 );
+module.exports = app;
