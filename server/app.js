@@ -1,13 +1,11 @@
 import express from 'express';
 const app = express();
-app.get('/', (req, res) => {
-  res.send('CICD Project API is running.....From Ci Hello ');
-});
+const port = 31000
 
-app.listen(
-  21000,
-  console.log(
-    `CICD Project server running  on port 2000 test`
-  )
-);
-module.exports = app;
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
