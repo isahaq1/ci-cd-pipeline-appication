@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeapp-kubernets-test
-        image: isahaq/nodeapp-test:latest
+        image: isahaq/cicdtestb:latest
         ports:
         - containerPort: 3000

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: isahaq/nodeapp-test:latest
+        image: isahaq/cicdtestb:latest
         ports:
         - containerPort: 3000
         
