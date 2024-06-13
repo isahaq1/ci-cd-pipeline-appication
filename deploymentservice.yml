@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-test-kubernetes
+  name: nodeapp-kubernets-lvtest
   labels:
-    app: nodeapp-test-kubernetes
+    app: nodeapp-kubernets-lvtest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp-test-kubernetes
+      app: nodeapp-kubernets-lvtest
   template:
     metadata:
       labels:
-        app: nodeapp-test-kubernetes 
+        app: nodeapp-kubernets-lvtest 
     spec:
       containers:
       - name: nodeserver
-        image: isahaq/cicdtestb:latest
+        image: isahaq/cicdtestbt:latest
         ports:
         - containerPort: 3000
         
@@ -26,10 +26,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-kubernetstest-service
+  name: nodeapp-kubernetslvtest-service
 spec:
   selector:
-    app: nodeapp-test-kubernetes 
+    app: nodeapp-kubernets-lvtest 
   type: LoadBalancer
   ports:
   - protocol: TCP

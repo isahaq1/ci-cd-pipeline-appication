@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-test-kubernetes
+  name: nodeapp-lvtest-kubernetes
   labels:
-    app: nodeapp-test-kubernetes
+    app: nodeapp-lvtest-kubernetes
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp-test-kubernetes
+      app: nodeapp-lvtest-kubernetes
   template:
     metadata:
       labels:
-        app: nodeapp-test-kubernetes 
+        app: nodeapp-lvtest-kubernetes 
     spec:
       containers:
-      - name: nodeapp-kubernets-test
-        image: isahaq/cicdtestb:latest
+      - name: nodeapp-kubernets-lvtest
+        image: isahaq/cicdtestbt:latest
         ports:
         - containerPort: 3000
