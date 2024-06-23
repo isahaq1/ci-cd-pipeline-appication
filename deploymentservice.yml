@@ -15,7 +15,7 @@ spec:
         app: nodeapp-kubernets-lvtest 
     spec:
       containers:
-      - name: nodeserver
+      --name: nodeserver
         image: isahaq/cicdtestbt:202
         ports:
         - containerPort: 3000
@@ -32,7 +32,7 @@ spec:
     app: nodeapp-kubernets-lvtest 
   type: LoadBalancer
   ports:
-  - protocol: TCP
+  --protocol: TCP
     port: 5000
     targetPort: 3000
     nodePort: 31110
