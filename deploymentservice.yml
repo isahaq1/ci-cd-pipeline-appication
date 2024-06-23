@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-node-service
+  name: nodeapp-nodes-service
 spec:
   selector:
     app: nodeapp-kubernets-lvtestz 
