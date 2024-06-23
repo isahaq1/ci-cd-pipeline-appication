@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: isahaq/cicdproject:203
+        image: isahaq/latestcicd:202
         ports:
         - containerPort: 3000
         
@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-kubetes-service
+  name: nodeapp-kubelatest-service
 spec:
   selector:
     app: nodeapp-kubernets-latest 
@@ -35,4 +35,4 @@ spec:
   - protocol: TCP
     port: 5000
     targetPort: 3000
-    nodePort: 31120
+    nodePort: 31110

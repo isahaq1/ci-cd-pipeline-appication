@@ -15,7 +15,7 @@ spec:
         app: nodeapp-latest-kubernetes 
     spec:
       containers:
-      - name: nodeapp-testkube-lvtest
-        image: isahaq/cicdproject:203
+      - name: nodeapp-kubernets-latest
+        image: isahaq/latestcicd:202
         ports:
         - containerPort: 3000
