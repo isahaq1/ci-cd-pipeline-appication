@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeapp-kubernets-latest
-        image: isahaq/latestcicd:202
+        image: isahaq/latestcicd:latest
         ports:
         - containerPort: 3000
