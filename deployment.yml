@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: nodeapp-latest-kubernetes
@@ -18,4 +18,4 @@ spec:
       - name: nodeapp-kubernets-latest
         image: isahaq/latestcicd:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 4000

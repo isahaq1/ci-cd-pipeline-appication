@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   name: nodeapp-kubelatest-service
@@ -9,5 +9,5 @@ spec:
   ports:
   - protocol: TCP
     port: 5000
-    targetPort: 3000
-    nodePort: 31120
+    targetPort: 4000
+    nodePort: 312220
