@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-kubernets-lvtestz
@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: isahaq/cicdtestbt:latest
+        image: isahaq/cicdtestbtnproject:latest
         ports:
         - containerPort: 3000
         
         
 ---
 
-apiVersion: v2
+apiVersion: v1
 kind: Service
 metadata:
   name: nodeapp-node-service

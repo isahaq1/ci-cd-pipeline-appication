@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp-lvtest-kubernetes
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeapp-kubernets-lvtest
-        image: isahaq/cicdtestbt:latest
+        image: isahaq/cicdtestbtnproject:latest
         ports:
         - containerPort: 3000
