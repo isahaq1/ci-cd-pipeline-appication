@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-kubernetsisk-service
+  name: nodeapp-kubetes-service
 spec:
   selector:
-    app: nodeapp-kubernets-isk 
+    app: nodeapp-kubernets-latest 
   type: LoadBalancer
   ports:
   - protocol: TCP

@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-kubernets-isk
+  name: nodeapp-kubernets-latest
   labels:
-    app: nodeapp-kubernets-isk
+    app: nodeapp-kubernets-latest
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp-kubernets-isk
+      app: nodeapp-kubernets-latest
   template:
     metadata:
       labels:
-        app: nodeapp-kubernets-isk 
+        app: nodeapp-kubernets-latest 
     spec:
       containers:
       - name: nodeserver
-        image: isahaq/cicdtestbttt:202
+        image: isahaq/cicdproject:203
         ports:
         - containerPort: 3000
         
@@ -26,10 +26,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-kubernetsisk-service
+  name: nodeapp-kubetes-service
 spec:
   selector:
-    app: nodeapp-kubernets-isk 
+    app: nodeapp-kubernets-latest 
   type: LoadBalancer
   ports:
   - protocol: TCP
