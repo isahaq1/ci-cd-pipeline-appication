@@ -15,7 +15,7 @@ spec:
         app: nodeapp-lvtest-kubernetes 
     spec:
       containers:
-      --name: nodeapp-kubernets-lvtest
+      - name: nodeapp-kubernets-lvtest
         image: isahaq/cicdtestbt:202
         ports:
-        --containerPort: 3000
+        - containerPort: 3000
