@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nodeapp
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nodeapp
@@ -17,5 +17,11 @@ spec:
       containers:
       - name: nodeserver
         image: isahaq/nodeapp:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
+     strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1    
