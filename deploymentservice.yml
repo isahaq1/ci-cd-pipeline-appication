@@ -32,7 +32,8 @@ spec:
     app: nodeapp 
   type: LoadBalancer
   ports:
+   - name: http
+    targetPort: http
   - protocol: TCP
     port: 5000
-    targetPort: 3000
     nodePort: 31109
