@@ -9,6 +9,5 @@ spec:
   ports:
   - protocol: TCP
     port: 5000
-     - name: http
-    targetPort: http
+    targetPort: 3000
     nodePort: 31109
