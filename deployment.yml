@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver1
-        image: isahaq/nodeapp:latest
+        image: isahaq/erpapp:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

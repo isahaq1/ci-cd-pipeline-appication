@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nodeserver1
-        image: isahaq/nodeapp:latest
+        image: isahaq/erpapp:latest
         ports:
         - containerPort: 3000
         
@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeapp-test-service
+  name: nodeapp-testN-service
 spec:
   selector:
     app: nodeapp 
@@ -35,4 +35,4 @@ spec:
   - protocol: TCP
     port: 5000
     targetPort: 3000
-    nodePort: 31109
+    nodePort: 31108
