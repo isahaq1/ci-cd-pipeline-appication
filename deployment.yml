@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodeapp-deployment
+  name: nodeapp-deployment-test
   labels:
     app: nodeapp
 spec:
@@ -15,7 +15,7 @@ spec:
         app: nodeapp 
     spec:
       containers:
-      - name: nodeserver
+      - name: nodeserver1
         image: isahaq/nodeapp:latest
         imagePullPolicy: Always
         ports:
