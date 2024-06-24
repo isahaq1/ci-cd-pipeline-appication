@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: mydockertest/nodeapp:latest
+        image: isahaq/nodeapp:latest
         ports:
         - containerPort: 3000
