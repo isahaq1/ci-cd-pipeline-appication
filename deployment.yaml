@@ -5,26 +5,7 @@ metadata:
   labels:
     app: nodeapp
 spec:
-  #replicas: 1
-   scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: nodeapp-deployment-test
-  minReplicas: 1
-  maxReplicas: 10
-    metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 50
-  - type: Resource
-    resource:
-      name: memory
-      target:
-        type: AverageValue
-        averageValue: 100Mi
+  replicas: 1
   selector:
     matchLabels:
       app: nodeapp
@@ -39,21 +20,5 @@ spec:
         # imagePullPolicy: Always
         ports:
         - containerPort: 3000
-behavior:
-  scaleDown:
-    stabilizationWindowSeconds: 300
-    policies:
-    - type: Percent
-      value: 100
-      periodSeconds: 15
-  scaleUp:
-    stabilizationWindowSeconds: 0
-    policies:
-    - type: Percent
-      value: 100
-      periodSeconds: 15
-    - type: Pods
-      value: 4
-      periodSeconds: 15
-    selectPolicy: Max
+
      
